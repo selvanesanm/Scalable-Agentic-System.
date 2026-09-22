@@ -1,0 +1,56 @@
+DATAZOIC SCALABLE AGENTIC SYSTEM
+================================
+
+                         USER
+                           |
+                           v
+                     +-----------+
+                     |  ROUTER   |
+                     +-----------+
+                       /   |   \
+                      /    |    \
+                     v     v     v
+                   RAG   SYSTEM  TOOL
+                         SEARCH  SEARCH
+                                  |
+                                  v
+                           RELEVANT TOOLS
+                                  |
+                                  v
+                             +---------+
+                             |  AGENT  |
+                             +---------+
+                                  |
+                                  v
+                         PARAMETER CHECK
+                                  |
+                                  v
+                           TOOL EXECUTOR
+                                  |
+                    +-------------+-------------+
+                    |             |             |
+                    v             v             v
+                 PayPal        Other APIs    Database
+                    |
+                    v
+                  RESULT
+                    |
+                    v
+                  STATE
+                    |
+                    v
+                  USER
+
+
+SCALABILITY IDEA
+
+1000 TOOLS
+    |
+    v
+TOOL SEARCH
+    |
+    v
+TOP 5-10 TOOLS
+    |
+    v
+LLM

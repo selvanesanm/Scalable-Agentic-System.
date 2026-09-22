@@ -1,0 +1,16 @@
+# Core demo runs on the Python standard library only, so it can be
+# run and tested with zero setup (see llm_client.py / agent.py for the
+# fallback path).
+#
+# To run with real LLM-based tool selection, set ANTHROPIC_API_KEY and
+# install:
+anthropic>=0.34.0
+
+# Used by the tests in tests/
+pytest>=7.0.0
+
+# Not used in this repo, but this is what a production version of the
+# tool search layer and observability would add, see DESIGN.md
+# section 13-16:
+#   sentence-transformers or an embeddings API, a vector database
+#   (e.g. pgvector, Pinecone, Weaviate), LangGraph, LangSmith
